@@ -1,14 +1,14 @@
 " ======= vim keybindings =======
-" open-fuzzy-finder     <space>-.
-" open-file-tree        <space>-f
-" open-tab              <space>-t
-" next-tab              <tab>
-" prev-tab              <shift>-<tab>
-" auto-format           <ctrl>-f
+" open-fuzzy-finder     SPC .
+" open-file-tree        SPC f
+" open-tab              SPC t
+" next-tab              TAB
+" prev-tab              SHFT TAB
+" auto-format           CTRL f
 
-" install plugins
+" setup plugins
 call plug#begin('~/.vim/plugged')
-Plug 'flazz/vim-colorschemes'
+Plug 'rafi/awesome-vim-colorschemes'
 Plug 'itchyny/lightline.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Shougo/defx.nvim'
@@ -22,7 +22,7 @@ call plug#end()
 set laststatus=2
 set background=dark
 let g:lightline = {
-            \ 'colorscheme': 'nord',
+            \ 'colorscheme': 'seoul256',
             \ }
 
 " setup ctrlp
@@ -36,7 +36,7 @@ let g:ctrlp_custom_ignore = {
 nnoremap <space>f :Defx<cr>
 autocmd filetype defx call s:defx_my_settings()
 function! s:defx_my_settings() abort
-    nnoremap <silent><buffer><expr> <cr> 
+    nnoremap <silent><buffer><expr> <cr>
                 \ defx#is_directory() ?
                 \ defx#do_action('open_or_close_tree') :
                 \ defx#do_action('open')
@@ -67,4 +67,4 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 filetype plugin indent on
-colorscheme solarized
+colorscheme deus
