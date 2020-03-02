@@ -1,9 +1,10 @@
 # Quick Start
 
-* install python3 and msgpack.
+* install dependencies.
 
 ```
 sudo apt install python3
+sudo apt install python3-neovim
 pip3 install msgpack
 ```
 
@@ -18,8 +19,8 @@ sudo apt install vim
 * create symlinks.
 
 ```
-ln -s vimrc ~/.vimrc
-ln -s vim ~/.vim
+ln -s ~/.dotfiles/vimrc ~/.vimrc
+ln -s ~/.dotfiles/vim ~/.vim
 ```
 
 * setup plugins using `:PlugInstall` in vim.
