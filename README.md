@@ -5,7 +5,8 @@
 ```
 sudo apt install python3
 sudo apt install python3-neovim
-pip3 install msgpack
+python3 -m pip install pynvim
+python3 -m pip install msgpack
 ```
 
 * install newest vim.
