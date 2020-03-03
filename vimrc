@@ -1,6 +1,7 @@
 " ======= vim keybindings =======
 " open-fuzzy-finder     SPC .
 " open-file-tree        SPC f
+" open-terminal         SPC s
 " open-tab              SPC t
 " next-tab              TAB
 " prev-tab              SHFT TAB
@@ -20,7 +21,6 @@ call plug#end()
 
 " setup lightline
 set laststatus=2
-set background=dark
 let g:lightline = {
             \ 'colorscheme': 'seoul256',
             \ }
@@ -29,11 +29,11 @@ let g:lightline = {
 let g:ctrlp_map='<space>.'
 let g:ctrlp_custom_ignore = {
             \ 'dir':  '\v[\/]\.(git)$',
-            \ 'file': '\v\.(exe|so|dll|zip|gz|swp|swo})$'
+            \ 'file': '\v\.(exe|so|dll|zip|gz|swp|swo|png|pdf)$'
             \ }
 
 " setup defx
-nnoremap <space>f :Defx<cr>
+nnoremap <space>f :Defx -show-ignored-files<cr>
 autocmd filetype defx call s:defx_my_settings()
 function! s:defx_my_settings() abort
     nnoremap <silent><buffer><expr> <cr>
@@ -58,6 +58,8 @@ nnoremap <silent><c-f> :Autoformat<cr>
 nnoremap <silent><space>t :tabe<cr>
 nnoremap <silent><tab> :tabn<cr>
 nnoremap <silent><s-tab> :tabp<cr>
+nnoremap <silent><space>s :terminal ++rows=15<cr>
+tnoremap <silent><esc> <c-w>:q!<cr>
 
 " setup appearance
 set number
@@ -65,11 +67,14 @@ set relativenumber
 set cursorline
 set noshowmode
 set noshowcmd
+set splitright
+set splitbelow
+set expandtab
 set tabstop=4
 set shiftwidth=4
-set expandtab
+set background=dark
+colorscheme deus
 let &t_SI.="\e[5 q"
 let &t_SR.="\e[4 q"
 let &t_EI.="\e[1 q"
 filetype plugin indent on
-colorscheme deus
