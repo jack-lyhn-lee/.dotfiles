@@ -48,6 +48,8 @@ endfunction
 let g:deoplete#enable_at_startup=1
 inoremap <expr><up> pumvisible() ? "\<esc><up>" : "\<up>"
 inoremap <expr><down> pumvisible() ? "\<esc><down>" : "\<down>"
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <expr><s-tab> pumvisible() ? "\<c-p>" : "\<s-tab>"
 
 " setup autoformat
 nnoremap <silent><c-f> :Autoformat<cr>
