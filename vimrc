@@ -1,7 +1,6 @@
 " ======= vim keybindings =======
 " open-fuzzy-finder     SPC .
 " open-file-tree        SPC f
-" open-terminal         SPC s
 " open-tab              SPC t
 " next-tab              TAB
 " prev-tab              SHFT TAB
@@ -62,8 +61,6 @@ nnoremap <silent><c-f> :Autoformat<cr>
 nnoremap <silent><space>t :tabe<cr>
 nnoremap <silent><tab> :tabn<cr>
 nnoremap <silent><s-tab> :tabp<cr>
-nnoremap <silent><space>s :terminal<cr>
-tnoremap <silent><esc> <c-w>:q!<cr>
 nnoremap <silent>d "_d
 vnoremap <silent>d "_d
 
