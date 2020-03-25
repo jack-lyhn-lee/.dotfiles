@@ -19,7 +19,7 @@ call plug#end()
 " setup lightline
 set laststatus=2
 let g:lightline = {
-            \ 'colorscheme': 'seoul256',
+            \ 'colorscheme': 'deus',
             \ }
 
 " setup ctrlp
