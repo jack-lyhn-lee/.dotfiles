@@ -47,6 +47,8 @@ nnoremap <silent><space>f :Autoformat<cr>
 nnoremap <silent><space>t :tabe<cr>
 nnoremap <silent><tab> :tabn<cr>
 nnoremap <silent><s-tab> :tabp<cr>
+nnoremap <silent><c-e> 8<c-e>
+nnoremap <silent><c-y> 8<c-y>
 nnoremap <silent>d "_d
 vnoremap <silent>d "_d
 
