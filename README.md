@@ -42,3 +42,5 @@ ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
 ```
 
 * Setup vim plugins using `:PlugInstall` in vim.
+
+* Restart the terminal and launch vim.
