@@ -32,9 +32,10 @@
 (mac) brew install tmux
 ```
 
-* Create symlinks.
+* Clone dotfiles and create symlinks.
 
 ```
+git clone (this repo)
 ln -s ~/.dotfiles/vimrc ~/.vimrc
 ln -s ~/.dotfiles/vim ~/.vim
 ln -s ~/.dotfiles/tmux.conf ~/.tmux.conf
